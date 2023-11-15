@@ -7,22 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		309ED38A2B04DA1E000F82C0 /* TimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309ED3892B04DA1E000F82C0 /* TimeManager.swift */; };
+		309ED38D2B04DBAB000F82C0 /* SecondDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309ED38C2B04DBAB000F82C0 /* SecondDisplay.swift */; };
 		30D6C27D2AF41F0900688455 /* AdAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D6C27C2AF41F0900688455 /* AdAppApp.swift */; };
 		30D6C27F2AF41F0900688455 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D6C27E2AF41F0900688455 /* ContentView.swift */; };
 		30D6C2812AF41F0B00688455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30D6C2802AF41F0B00688455 /* Assets.xcassets */; };
 		30D6C2842AF41F0B00688455 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30D6C2832AF41F0B00688455 /* Preview Assets.xcassets */; };
 		30D6C28F2AF4208800688455 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D6C28E2AF4208800688455 /* CardView.swift */; };
-		30D6C2912AF4258D00688455 /* FirstScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D6C2902AF4258D00688455 /* FirstScreenModel.swift */; };
+		30D6C2912AF4258D00688455 /* AdventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D6C2902AF4258D00688455 /* AdventModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		309ED3892B04DA1E000F82C0 /* TimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManager.swift; sourceTree = "<group>"; };
+		309ED38C2B04DBAB000F82C0 /* SecondDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondDisplay.swift; sourceTree = "<group>"; };
 		30D6C2792AF41F0900688455 /* AdApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30D6C27C2AF41F0900688455 /* AdAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdAppApp.swift; sourceTree = "<group>"; };
 		30D6C27E2AF41F0900688455 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		30D6C2802AF41F0B00688455 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30D6C2832AF41F0B00688455 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		30D6C28E2AF4208800688455 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		30D6C2902AF4258D00688455 /* FirstScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenModel.swift; sourceTree = "<group>"; };
+		30D6C2902AF4258D00688455 /* AdventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		309ED38B2B04DB6B000F82C0 /* SecondDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				309ED38C2B04DBAB000F82C0 /* SecondDisplay.swift */,
+			);
+			path = SecondDisplay;
+			sourceTree = "<group>";
+		};
 		30D6C2702AF41F0900688455 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				30D6C28A2AF41F2700688455 /* StartDisplay */,
+				309ED38B2B04DB6B000F82C0 /* SecondDisplay */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -93,7 +106,7 @@
 		30D6C28C2AF41F8C00688455 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				30D6C2902AF4258D00688455 /* FirstScreenModel.swift */,
+				30D6C2902AF4258D00688455 /* AdventModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -101,6 +114,7 @@
 		30D6C28D2AF41F9F00688455 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				309ED3892B04DA1E000F82C0 /* TimeManager.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -177,7 +191,9 @@
 			files = (
 				30D6C27F2AF41F0900688455 /* ContentView.swift in Sources */,
 				30D6C28F2AF4208800688455 /* CardView.swift in Sources */,
-				30D6C2912AF4258D00688455 /* FirstScreenModel.swift in Sources */,
+				30D6C2912AF4258D00688455 /* AdventModel.swift in Sources */,
+				309ED38A2B04DA1E000F82C0 /* TimeManager.swift in Sources */,
+				309ED38D2B04DBAB000F82C0 /* SecondDisplay.swift in Sources */,
 				30D6C27D2AF41F0900688455 /* AdAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
