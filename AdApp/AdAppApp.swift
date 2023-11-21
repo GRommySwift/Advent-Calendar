@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct AdAppApp: App {
+    @StateObject var cardManager: CardManager = CardManager()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                ContentView()
+            }.environmentObject(cardManager)
         }
     }
 }

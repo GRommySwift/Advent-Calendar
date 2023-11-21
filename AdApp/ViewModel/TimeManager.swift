@@ -6,29 +6,41 @@
 //
 import SwiftUI
 
-class TimerManager: NSObject {
-    @StateObject private var cardManager = CardManager()
-    @State private var currentCard: AdventModel?
-    var timer: Timer?
-
-    func startTimer() {
-        let calendar = Calendar.current
-        var dateComponents = DateComponents()
-        dateComponents.year = 2023
-        dateComponents.month = 12
-        dateComponents.day = 20
-        let startDate = calendar.date(from: dateComponents)!
-
-        timer = Timer(fireAt: startDate, interval: 24 * 60 * 60, target: self, selector: #selector(update), userInfo: nil, repeats: true)
-        RunLoop.main.add(timer!, forMode: .common)
-    }
-
-    @objc func update() {
-        // Обновляем текущую карточку
-            currentCard = cardManager.getCurrentCard()
-
-            // Переходим к следующей карточке
-            cardManager.moveNext()
-    }
+class TimerManager: ObservableObject {
+    
+    //private var cardManager: CardManager
+   // private var currentCard: AdventModel?
+    
+   
+    
+    
+//    func getCurrentDay() -> Int {
+//            let currentDate = Date()
+//            let calendar = Calendar.current
+//            let dayOfMonth = calendar.component(.day, from: currentDate)
+//            return dayOfMonth
+//        }
+//    var timer: Timer?
+//
+//    func startTimer() {
+//        let calendar = Calendar.current
+//        var dateComponents = DateComponents()
+//        dateComponents.year = 2023
+//        dateComponents.month = 11
+//        dateComponents.day = 21
+//        let startDate = calendar.date(from: dateComponents)!
+//
+//        timer = Timer(fireAt: startDate, interval: 10, target: self, selector: #selector(update), userInfo: nil, repeats: true)
+//        RunLoop.main.add(timer!, forMode: .common)
+//    }
+//
+//    @objc func update() {
+//        // Обновляем текущую карточку
+//        currentCard = cardManager.getCurrentCard()
+//
+//            // Переходим к следующей карточке
+//        cardManager.moveNext()
+//    }
+//    
+    
 }
-
