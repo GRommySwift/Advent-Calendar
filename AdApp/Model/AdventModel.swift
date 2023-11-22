@@ -20,15 +20,15 @@ class CardManager: ObservableObject {
     @Published var currentCardIndex: Int = 0
     @Published var testData: [AdventModel] = [
         AdventModel(image: "0", text: "Туть пока пусто ждемс 23.12.2023"),
-        AdventModel(image: "1", text: "23.12"),
-        AdventModel(image: "1", text: "24.12"),
-        AdventModel(image: "1", text: "25.12"),
-        AdventModel(image: "1", text: "26.12"),
-        AdventModel(image: "1", text: "27.12"),
-        AdventModel(image: "1", text: "28.12"),
-        AdventModel(image: "1", text: "29.12"),
-        AdventModel(image: "1", text: "30.12"),
-        AdventModel(image: "1", text: "31.12"),
+        AdventModel(image: "2", text: "23.12"),
+        AdventModel(image: "2", text: "24.12"),
+        AdventModel(image: "2", text: "25.12"),
+        AdventModel(image: "2", text: "26.12"),
+        AdventModel(image: "2", text: "27.12"),
+        AdventModel(image: "2", text: "28.12"),
+        AdventModel(image: "2", text: "29.12"),
+        AdventModel(image: "2", text: "30.12"),
+        AdventModel(image: "2", text: "31.12"),
     ]
     
     var date: Int {
@@ -40,7 +40,7 @@ class CardManager: ObservableObject {
     
     func makeMyDay() {
         switch date {
-        case 23:
+        case 22:
             currentCardIndex = 1
         case 24:
             currentCardIndex = 2
@@ -62,20 +62,4 @@ class CardManager: ObservableObject {
             currentCardIndex = 0
         }
     }
-   // var date = getCurrentDay()
-  
-        
-//        func getCurrentCard() -> AdventModel? {
-//            guard currentCardIndex < testData.count else {
-//                return nil
-//            }
-//            return testData[currentCardIndex]
-//        }
-//
-//        func moveNext() {
-//            currentCardIndex += 1
-//            if currentCardIndex >= testData.count {
-//                currentCardIndex = 0
-//            }
-//        }
 }

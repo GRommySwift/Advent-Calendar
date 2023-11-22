@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct CardView: View {
-    // @State var image: String
-    //@State var text: String
     let firstScreenModel: AdventModel
     @EnvironmentObject var cardManager: CardManager
     var body: some View {
