@@ -26,21 +26,37 @@ struct CardView: View {
                     
             }.frame(width: 240, height: 240)
         } else {
-            NavigationLink(destination: SecondDisplay().navigationBarBackButtonHidden(true)) {
+            if firstScreenModel.isOpened == false {
+                NavigationLink(destination: SecondDisplay().navigationBarBackButtonHidden(true)) {
+                    VStack {
+                        Image(firstScreenModel.image)
+                            .resizable()
+                            .scaledToFill()
+                            .cornerRadius(30)
+                            .shadow(radius: 5)
+                        Text(firstScreenModel.text)
+                            .bold()
+                            .font(.title)
+                            .foregroundColor(.white)
+                            .padding(-3)
+                    }
+                    
+                }.frame(width: 240, height: 240)
+            } else {
                 VStack {
-                    Image(firstScreenModel.image)
+                    Image("3")
                         .resizable()
                         .scaledToFill()
                         .cornerRadius(30)
                         .shadow(radius: 5)
-                    Text(firstScreenModel.text)
-                        .bold()
+                    Text("Уже открыто")
+                        .multilineTextAlignment(.center)
                         .font(.title)
                         .foregroundColor(.white)
                         .padding(-3)
-                }
-                
-            }.frame(width: 240, height: 240)
+                        
+                }.frame(width: 240, height: 240)
+            }
         }
     }
 }

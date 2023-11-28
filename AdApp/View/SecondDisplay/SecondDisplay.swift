@@ -8,13 +8,22 @@
 import SwiftUI
 
 struct SecondDisplay: View {
+    @State private var questManager: MiniGameModel?
+    @EnvironmentObject var cardManager: CardManager
     var body: some View {
-        Text("Hi there")
+        NavigationStack {
+            ZStack {
+                Image("4").resizable().scaledToFill().edgesIgnoringSafeArea(.all)
+                MiniGameView(question: cardManager.quests[cardManager.currentCardIndex].firstQuest)
+            }
+        }
     }
 }
 
 struct SecondDisplay_Previews: PreviewProvider {
     static var previews: some View {
-        SecondDisplay()
+        NavigationStack {
+            SecondDisplay()
+        }.environmentObject(CardManager())
     }
 }

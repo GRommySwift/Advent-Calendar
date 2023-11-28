@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		309ED38A2B04DA1E000F82C0 /* TimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309ED3892B04DA1E000F82C0 /* TimeManager.swift */; };
+		309ED38A2B04DA1E000F82C0 /* CardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309ED3892B04DA1E000F82C0 /* CardManager.swift */; };
 		309ED38D2B04DBAB000F82C0 /* SecondDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309ED38C2B04DBAB000F82C0 /* SecondDisplay.swift */; };
+		30BAD2DF2B16088C00BAF57C /* MiniGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAD2DE2B16088C00BAF57C /* MiniGameView.swift */; };
 		30D6C27D2AF41F0900688455 /* AdAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D6C27C2AF41F0900688455 /* AdAppApp.swift */; };
 		30D6C27F2AF41F0900688455 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D6C27E2AF41F0900688455 /* ContentView.swift */; };
 		30D6C2812AF41F0B00688455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30D6C2802AF41F0B00688455 /* Assets.xcassets */; };
@@ -18,8 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		309ED3892B04DA1E000F82C0 /* TimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManager.swift; sourceTree = "<group>"; };
+		309ED3892B04DA1E000F82C0 /* CardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardManager.swift; sourceTree = "<group>"; };
 		309ED38C2B04DBAB000F82C0 /* SecondDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondDisplay.swift; sourceTree = "<group>"; };
+		30BAD2DE2B16088C00BAF57C /* MiniGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniGameView.swift; sourceTree = "<group>"; };
 		30D6C2792AF41F0900688455 /* AdApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30D6C27C2AF41F0900688455 /* AdAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdAppApp.swift; sourceTree = "<group>"; };
 		30D6C27E2AF41F0900688455 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				309ED38C2B04DBAB000F82C0 /* SecondDisplay.swift */,
+				30BAD2DE2B16088C00BAF57C /* MiniGameView.swift */,
 			);
 			path = SecondDisplay;
 			sourceTree = "<group>";
@@ -114,7 +117,7 @@
 		30D6C28D2AF41F9F00688455 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				309ED3892B04DA1E000F82C0 /* TimeManager.swift */,
+				309ED3892B04DA1E000F82C0 /* CardManager.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -191,8 +194,9 @@
 			files = (
 				30D6C27F2AF41F0900688455 /* ContentView.swift in Sources */,
 				30D6C28F2AF4208800688455 /* CardView.swift in Sources */,
+				30BAD2DF2B16088C00BAF57C /* MiniGameView.swift in Sources */,
 				30D6C2912AF4258D00688455 /* AdventModel.swift in Sources */,
-				309ED38A2B04DA1E000F82C0 /* TimeManager.swift in Sources */,
+				309ED38A2B04DA1E000F82C0 /* CardManager.swift in Sources */,
 				309ED38D2B04DBAB000F82C0 /* SecondDisplay.swift in Sources */,
 				30D6C27D2AF41F0900688455 /* AdAppApp.swift in Sources */,
 			);
